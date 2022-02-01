@@ -12,7 +12,17 @@ services:
       - 27017:27017
     restart: unless-stopped
   web:
-    build: . 
+    build: .
+    command: python api/app.py
+    ports:
+        - "5000:5000"
+    volumes:
+        - .:/code
+    depends_on:
+        - mongodb
+  test:
+    build: .
+    command: python -m unittest discover -p "*.py" -s api.test
     ports:
         - "5000:5000"
     volumes:
