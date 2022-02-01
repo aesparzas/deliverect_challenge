@@ -100,7 +100,7 @@ There are two main endpoints of this api `/items` and `/orders`.
 ```
 #### Get specific item
 - METHOD: GET
-- URL: /items/<itemID>
+- URL: /items/itemID
 - no body
 - sample response
 ```json
@@ -157,7 +157,7 @@ There are two main endpoints of this api `/items` and `/orders`.
 ```
 #### Update specific item
 - METHOD: PATCH
-- URL: /items/<itemID>
+- URL: /items/itemID
 - HEADER If-Match with `_etag`
 - sample body
 ```json
@@ -183,10 +183,126 @@ There are two main endpoints of this api `/items` and `/orders`.
 ```
 #### Delete specific item
 - METHOD: DELETE
-- URL: /items/<itemID>
+- URL: /items/itemID
 - HEADER If-Match with `_etag`
 - No body
 - No response status code 204
+
+#### retrieve orders
+- METHOD: GET
+- URL: /orders
+- no body
+- sample response
+```json
+{
+    "_items": [
+        {
+            "_id": "61f9709ecc03f837846f6bb1",
+            "items": [
+                {
+                    "item": "61f87bf6d8f4e2847af473c9",
+                    "quantity": 2,
+                    "subtotal": 40
+                }
+            ],
+            "total": 40,
+            "note": "Some note",
+            "_updated": "Tue, 01 Feb 2022 17:40:46 GMT",
+            "_created": "Tue, 01 Feb 2022 17:40:46 GMT",
+            "_etag": "ddd9a883d89f5b04ad917000d6932fd4688c6149",
+            "_links": {
+                "self": {
+                    "title": "Order",
+                    "href": "orders/61f9709ecc03f837846f6bb1"
+                }
+            }
+        }
+    ],
+    "_links": {
+        "parent": {
+            "title": "home",
+            "href": "/"
+        },
+        "self": {
+            "title": "orders",
+            "href": "orders"
+        }
+    },
+    "_meta": {
+        "page": 1,
+        "max_results": 25,
+        "total": 1
+    }
+}
+```
+#### create order
+- METHOD: POST
+- URL: /orders
+- sample body
+```json
+{
+    "items": [{
+        "item": "61f87bf6d8f4e2847af473c9",
+        "quantity": 2
+    }],
+    "total": 40,
+    "note": "Some note"
+}
+```
+NOTE: existing items and calculated total are validated, if something is wrong with 
+these, the error response status code is 422
+- sample response
+```json
+{
+    "_updated": "Tue, 01 Feb 2022 17:51:01 GMT",
+    "_created": "Tue, 01 Feb 2022 17:51:01 GMT",
+    "_etag": "7ca6be44a46c58e6f62db8f0e27c2b9cd73a2835",
+    "_id": "61f97305a9d563ba9814327e",
+    "_links": {
+        "self": {
+            "title": "Order",
+            "href": "orders/61f97305a9d563ba9814327e"
+        }
+    },
+    "_status": "OK"
+}
+```
+#### get specific order
+- METHOD: GET
+- URL: /orders/orderID
+- no body
+- sample response
+```json
+{
+    "_id": "61f97305a9d563ba9814327e",
+    "items": [
+        {
+            "item": "61f87bf6d8f4e2847af473c9",
+            "quantity": 2,
+            "subtotal": 40
+        }
+    ],
+    "total": 40,
+    "note": "Some note",
+    "_updated": "Tue, 01 Feb 2022 17:51:01 GMT",
+    "_created": "Tue, 01 Feb 2022 17:51:01 GMT",
+    "_etag": "7ca6be44a46c58e6f62db8f0e27c2b9cd73a2835",
+    "_links": {
+        "self": {
+            "title": "Order",
+            "href": "orders/61f97305a9d563ba9814327e"
+        },
+        "parent": {
+            "title": "home",
+            "href": "/"
+        },
+        "collection": {
+            "title": "orders",
+            "href": "orders"
+        }
+    }
+}
+```
 ### Tests
 
 The unittests test for the api endpoint, correct response and coherent data. Though the error codes

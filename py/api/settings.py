@@ -3,13 +3,9 @@ MONGO_PORT = 27017
 MONGO_DBNAME = 'orders'
 
 RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
-ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
+ITEM_METHODS = ['GET', 'PATCH', 'DELETE']
 
 items = {
-    'additional_lookup': {
-        'url': 'regex("[\w]+")',
-        'field': 'description'
-    },
     'schema': {
         'description': {
             'type': 'string',
@@ -30,7 +26,33 @@ items = {
 }
 
 orders = {
-
+    'resource_methods': ['GET', 'POST'],
+    'item_methods': ['GET'],
+    'schema': {
+        'items': {
+            'type': 'list',
+            'schema': {
+                'type': 'dict',
+                'schema': {
+                    'item': {
+                        'type': 'objectid',
+                    },
+                    'quantity': {
+                        'type': 'integer'
+                    }
+                }
+            },
+            'required': True
+        },
+        'total': {
+            'type': 'number',
+            'required': True
+        },
+        'note': {
+            'type': 'string',
+            'maxlength': 50
+        }
+    }
 }
 
 DOMAIN = {

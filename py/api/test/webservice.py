@@ -1,4 +1,5 @@
 import unittest
+import random
 
 from pymongo import MongoClient
 
@@ -13,7 +14,9 @@ class TestWebservice(unittest.TestCase):
         self.mongo_client = MongoClient('mongodb', 27017)
         self.db = self.mongo_client['orders']
         self.items = self.db.items
+        self.orders = self.db.orders
         self.item_keys = ['_id', 'description', 'price', 'quantity']
+        self.order_keys = ['_id', 'items', 'total']
 
     def tearDown(self):
         if self.inserted_item is not None:
@@ -26,10 +29,6 @@ class TestWebservice(unittest.TestCase):
         json = response.json
         for item in json['_items']:
             self.assertTrue(all([k in item for k in self.item_keys]))
-
-    def test_filtering_items(self):
-        """Tests filtering a list of items and getting the correct response"""
-        pass
 
     def test_get_item(self):
         """Tests getting an item and getting the correct response"""
@@ -115,15 +114,46 @@ class TestWebservice(unittest.TestCase):
 
     def test_create_order(self):
         """Tests creating an order and validates the fields in the response"""
-        pass
+        import json
+        total = 0
+        item_n = 5 # number of items in the order
+
+        items = [] # item list in the request
+        for i in range(item_n):
+            item = self.items.find_one()
+            quantity = random.randint(1, 5)
+            items.append({
+                'item': str(item['_id']),
+                'quantity': quantity
+            })
+            total += quantity * item['price']
+
+        request = {
+            'items': items,
+            'total': total,
+            'note': 'made in unittests'
+        }
+
+        response = self.client.post(
+            'orders', data=json.dumps(request),
+            headers={'Content-Type': 'application/json'})
+        self.assertEqual(response.status_code, 201)
 
     def test_retrieving_orders(self):
         """Tests getting orders and getting the correct response"""
-        pass
+        response = self.client.get('orders')
+        self.assertEqual(response.status_code, 200)
+        json = response.json
+        for i in json['_items']:
+            self.assertTrue(all([k in i for k in self.order_keys]))
 
     def test_get_order(self):
         """Tests getting a single order and getting the correct response"""
-        pass
+        order = self.orders.find_one()
+        response = self.client.get('orders/' + str(order['_id']))
+        self.assertEqual(response.status_code, 200)
+        json = response.json
+        self.assertTrue(all([k in json for k in self.order_keys]))
 
     @unittest.skip('404 error handled by Eve framework')
     def test_get_ne_order(self):
