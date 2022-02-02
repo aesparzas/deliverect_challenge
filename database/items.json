@@ -1,0 +1,372 @@
+[{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473c9"
+  },
+  "description": "Crispy Chicken Bites",
+  "price": 20,
+  "quantity": 6
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473ca"
+  },
+  "description": "Pickle and Chicken Bites",
+  "price": 20,
+  "quantity": 6
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473cb"
+  },
+  "description": "Big Mouth Beef Bites",
+  "price": 20,
+  "quantity": 3
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473cc"
+  },
+  "description": "Classic Chicken Fajitas",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473cd"
+  },
+  "description": "Chicken Cajun Sandwich",
+  "price": 25,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473ce"
+  },
+  "description": "Oldtimer with Cheese",
+  "price": 25,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473cf"
+  },
+  "description": "Turkey Cajun Club Sandwich",
+  "price": 27,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d0"
+  },
+  "description": "Chicken Cajun Club Sandwich",
+  "price": 27,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d1"
+  },
+  "description": "Bacon Burger",
+  "price": 28,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d2"
+  },
+  "description": "Bacon Perfection Burger",
+  "price": 30,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d3"
+  },
+  "description": "Melted Cheese Burger",
+  "price": 30,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d4"
+  },
+  "description": "Mushroom Swiss Burger",
+  "price": 25,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d5"
+  },
+  "description": "Chiky Chiky Ranch Sandwich",
+  "price": 25,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d6"
+  },
+  "description": "Cheddar Crust Burger",
+  "price": 30,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d7"
+  },
+  "description": "Big Boss Burger",
+  "price": 35,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d8"
+  },
+  "description": "Spicy Jalapeno Burger",
+  "price": 30,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473d9"
+  },
+  "description": "BBQ Ranch Burger",
+  "price": 28,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473da"
+  },
+  "description": "Chicken Ranch Sandwich",
+  "price": 38,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473db"
+  },
+  "description": "Bacon Burger Platter",
+  "price": 90,
+  "quantity": 4
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473dc"
+  },
+  "description": "Chicken Ranch Sandwich Plater",
+  "price": 92,
+  "quantity": 4
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473dd"
+  },
+  "description": "Chiky Chiky Ranch Sandwich Platter",
+  "price": 84,
+  "quantity": 2
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473de"
+  },
+  "description": "Chiky Chiky Ranch Sandwich Platter",
+  "price": 90,
+  "quantity": 4
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473df"
+  },
+  "description": "Oldtimer with Cheese Platter",
+  "price": 48,
+  "quantity": 2
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e0"
+  },
+  "description": "Oldtimer with Cheese Platter",
+  "price": 90,
+  "quantity": 4
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e1"
+  },
+  "description": "Famous wings lg",
+  "price": 60,
+  "quantity": 30
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e2"
+  },
+  "description": "Famous wings xl",
+  "price": 90,
+  "quantity": 50
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e3"
+  },
+  "description": "Kickin’ Crispers",
+  "price": 45,
+  "quantity": 15
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e4"
+  },
+  "description": "Chicken Crispers",
+  "price": 78,
+  "quantity": 30
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e5"
+  },
+  "description": "Famous Baby Back Ribs",
+  "price": 63,
+  "quantity": 2
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e6"
+  },
+  "description": "Southwestern eggrolls",
+  "price": 36,
+  "quantity": 6
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e7"
+  },
+  "description": "Tableside Guacamole",
+  "price": 16,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e8"
+  },
+  "description": "Chicken Fajitas Nachos",
+  "price": 28,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473e9"
+  },
+  "description": "Classic Nachos",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473ea"
+  },
+  "description": "Southwestern Soup",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473eb"
+  },
+  "description": "Carnival Salad",
+  "price": 26,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473ec"
+  },
+  "description": "Boneless Buffalo Salad",
+  "price": 24,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473ed"
+  },
+  "description": "Quesadilla Explotion Salad",
+  "price": 24,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473ee"
+  },
+  "description": "Santa Fe Chicken Salad",
+  "price": 24,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473ef"
+  },
+  "description": "Choice Baby Back Ribs",
+  "price": 69,
+  "quantity": 2
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f0"
+  },
+  "description": "Coke",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f1"
+  },
+  "description": "Sprite",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f2"
+  },
+  "description": "Lift",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f3"
+  },
+  "description": "Delawere",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f4"
+  },
+  "description": "Bottled Water",
+  "price": 18,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f5"
+  },
+  "description": "Mineral Water",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f6"
+  },
+  "description": "Heineken",
+  "price": 30,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f7"
+  },
+  "description": "Corona",
+  "price": 30,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f8"
+  },
+  "description": "Coors",
+  "price": 30,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473f9"
+  },
+  "description": "Coors Light",
+  "price": 30,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473fa"
+  },
+  "description": "Coke Light",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473fb"
+  },
+  "description": "Sprite Light",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473fc"
+  },
+  "description": "Lift Light",
+  "price": 20,
+  "quantity": 1
+},{
+  "_id": {
+    "$oid": "61f87bf6d8f4e2847af473fd"
+  },
+  "description": "Delawere Light",
+  "price": 20,
+  "quantity": 1
+}]

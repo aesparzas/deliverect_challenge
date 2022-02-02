@@ -28,6 +28,10 @@ The whole project is ready to function inside docker containers.
 
 The makefile included in this project simplifies its use, for running the project just type
 
+`make import`
+
+To import a sample database
+
 `make up`
 
 To run the unittests
@@ -45,6 +49,12 @@ To stop and destroy the containers
 To rebuild the dockerfile
 
 `make rebuild`
+
+So, for first use, just run
+
+`make import`
+
+`make up`
 ### Endpoints
 There are two main endpoints of this api `/items` and `/orders`.
 

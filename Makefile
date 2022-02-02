@@ -16,6 +16,11 @@ stop: ## stop Docker containers without removing them
 down: ## stop and remove Docker containers
 	@docker-compose down --remove-orphans
 
+.PHONY: import
+import: ## import jsons to the db
+	@docker-compose run --service-ports --rm mongo_seed
+
+
 .PHONY: rebuild
 rebuild: ## rebuild base Docker images
 	@docker-compose down --remove-orphans

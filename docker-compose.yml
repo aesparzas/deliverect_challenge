@@ -11,6 +11,16 @@ services:
     ports:
       - 27017:27017
     restart: unless-stopped
+
+  mongo_seed:
+    image: mongo
+    links:
+      - mongodb
+    volumes:
+      - ./database:/database
+    command:
+      /database/import.sh
+
   web:
     build: .
     command: python -m api.app
